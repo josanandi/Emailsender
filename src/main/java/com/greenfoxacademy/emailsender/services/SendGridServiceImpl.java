@@ -8,7 +8,7 @@ import java.io.IOException;
 
 @Service
 public class SendGridServiceImpl implements SendGridService {
-    final private String sendGridApi = "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";
+    final private String sendGridApi = "";
 
     /**
      * PersonalizeEmail - details setting for each email. For the complete example:
@@ -49,7 +49,7 @@ public class SendGridServiceImpl implements SendGridService {
         mail.addPersonalization(personalization);
 
         /* Set template id */
-        mail.setTemplateId("d-3d771abb48344611aefe7b001d0a1def");
+        mail.setTemplateId("");
 
         /* Reply to setting */
         Email replyTo = new Email();
