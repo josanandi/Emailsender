@@ -8,7 +8,7 @@ import java.io.IOException;
 
 @Service
 public class SendGridServiceImpl implements SendGridService {
-    final private String sendGridApi = "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";
+    final private String sendGridApi = "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";
 
     /**
      * PersonalizeEmail - details setting for each email. For the complete example:
@@ -43,8 +43,8 @@ public class SendGridServiceImpl implements SendGridService {
         personalization.addHeader("X-Mock", "true");
 
         /* Substitution value settings */
-        personalization.addSubstitution("%name%", emailPojo.getToName());
-        personalization.addSubstitution("%from%", emailPojo.getFromName());
+        personalization.addSubstitution("name", emailPojo.getToName());
+        personalization.addSubstitution("from", emailPojo.getFromName());
 
         mail.addPersonalization(personalization);
 
